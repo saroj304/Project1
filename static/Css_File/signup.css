@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+/* .left-image {
+    background-repeat: no-repeat;
+    /* background-image: url(../images/back4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    border-style: none;
+    border-radius: 323px 323px 323px 323px;
+} 
+*/
+.main-container
+{
+display:flex;
+background-image:url(../images/back1.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+height:576px;
+width:100%;
+overflow:auto;
+justify-content: flex-end;
+}
+/* .left-item
+{
+    width:50%;
+    overflow: auto;
+} */
+.form-control /*  */
+{
+   border-radius: 5px;
+   border-top: 0px;
+
+}
+/* .form-side {
+    margin: 150px 0px 0px 60px;
+    width: 84%;
+    overflow:auto;
+} */
+form{
+    display: grid;
+    grid-column: auto auto;
+    grid-template-columns: 49% 49%;/* 2 item in a row*/
+    grid-column-gap: 2%;
+    margin-left:0px;
+    overflow: auto;
+}
+/* .right-item
+{
+    width:50%;
+    margin:0px 5px 0px 5px;
+} */
+button.btn.btn-primary {
+    width: 100%;
+}
+input.form-control
+{
+    border:none;
+    border-bottom:2px solid;
+    background-color:initial;
+    font-size:x-large;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    padding-top: 28px;
+}
+input.form-control:focus
+{
+
+}
+.mb-2.submit-btn /* submmit button*/
+{
+    margin-top: 28px;
+    color: white;
+}
+.glow{
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1ms ease-in-out infinite alternate;
+  }
+  small .option 
+  {
+      font-size: 12px;
+  }
+@keyframes glow{
+    from {
+      text-shadow: 0 0 10px #fff ;
+    }
+    
+    to {
+      text-shadow: 0 0 10px #fff;}
+  }
+  .mb-2.btn-part 
+  {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.right-item {  /*  right side of main div*/
+    margin-top: 85px;
+    
+}
+input.form-control::placeholder{
+    color: white;
+    padding-top: 10px;
+}
+
+ button.btn.btn-primary {
+    font-size: 25px;
+    padding: 3px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+@media only screen and (max-width:770px) {
+ .main-container
+    {
+        width:auto;
+        height: auto;
+        overflow:auto; 
+        display: flex;
+        justify-content: center;
+    }
+    .glow 
+    {
+      font-size: 45px;
+      color: firebrick;
+    }
+    input.form-control::placeholder{
+        color:firebrick;
+    }
+    form
+    {
+      display: grid; 
+      grid-template-columns: auto;
+      width: auto;
+      overflow: auto; 
+     justify-content: center;
+    } 
+    .option-btn
+    {
+        font-size: 12px;
+    }
+    .new-account
+    {
+       width:70%; 
+    }
+    
+  }
+  
